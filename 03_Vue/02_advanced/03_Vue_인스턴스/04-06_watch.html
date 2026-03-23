@@ -50,12 +50,12 @@
 
           watch(
             () => ({ ...user }), // 객체를 복사해서
-            user,
             (newVal, oldVal) => {
               console.log(
                 `기존 사용자 : ${oldVal.age} , ${oldVal.email} -> 변경된 사용자 : ${newVal.age}, ${newVal.email}`,
               );
             },
+            { deep: true },
           );
           return {
             name,
