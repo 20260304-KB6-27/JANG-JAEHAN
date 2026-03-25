@@ -17,27 +17,27 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const new_post = ref({
-  title: "",
-  content: "",
+  title: '',
+  content: '',
 });
 
-const emit = defineEmits(["add"]);
+const emit = defineEmits(['add']);
 
 const addPost = () => {
-  if (new_post.value.title.trim() === "") return;
-  if (new_post.value.content.trim() === "") return;
+  if (new_post.value.title.trim() === '') return;
+  if (new_post.value.content.trim() === '') return;
 
-  emit("add", {
+  emit('add', {
     title: new_post.value.title,
     content: new_post.value.content,
   });
 
   // post 초기화
-  new_post.value.title = "";
-  new_post.value.content = "";
+  new_post.value.title = '';
+  new_post.value.content = '';
 };
 </script>
 
