@@ -2,19 +2,7 @@ import axios from 'axios';
 
 // axios.create로 axios 객체 생성
 const instance = axios.create({
-  baseURL: 'api/',
-
-  /*
-    axios 요청에 대해 공통된 설정들을 구성할 수 있다.
-  */
-
-  // header
-  //   headers: {
-  //     // 공통 헤더들
-  //     Authorization: 'Bearer + ..',
-  //   },
-
-  // timeout
+  baseURL: '/api',
 });
 
 export default instance;

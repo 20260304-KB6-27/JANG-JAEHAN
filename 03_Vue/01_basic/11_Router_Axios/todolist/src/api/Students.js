@@ -13,9 +13,6 @@ export const useStudent = () => {
 
   //전체 조회
   const fetchAllStudents = async () => {
-    // const response = await axios.get('api/students');
-
-    // baseURL 설정으로 /api 안써도됨!
     const response = await axios.get('/students');
     students.value = response.data;
   };
