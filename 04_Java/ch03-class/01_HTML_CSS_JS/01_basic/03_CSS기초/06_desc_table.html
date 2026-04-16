@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table > tbody > tr > th {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- tbody 생략으로 인해 자식 선택자 사용 시 tbody 또한 적용해야함-->
+      <tr>
+        <th>이름</th>
+        <th>지역</th>
+      </tr>
+      <tr>
+        <td>장재한</td>
+        <td>서울시 구로구</td>
+      </tr>
+    </table>
+  </body>
+</html>
