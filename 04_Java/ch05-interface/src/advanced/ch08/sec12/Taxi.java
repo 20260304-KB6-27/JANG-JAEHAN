@@ -1,4 +1,4 @@
-package ch08.sec11.exam02;
+package advanced.ch08.sec12;
 
 public class Taxi implements Vehicle {
     @Override

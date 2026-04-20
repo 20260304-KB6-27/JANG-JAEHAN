@@ -1,4 +1,4 @@
-package ch08.sec12;
+package advanced.ch08.sec11.exam02;
 
 public interface Vehicle {
     void run();
